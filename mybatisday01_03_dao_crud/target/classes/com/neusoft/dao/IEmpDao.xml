@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.dao.IEmpDao">
+<!--    查询全部id-->
+     <select id="findAll" resultType="com.neusoft.domain.Emp">
+         select * from emp
+     </select>
+
+<!--    查询特定id-->
+    <select id="findById" parameterType="INT" resultType="com.neusoft.domain.Emp">
+        select * from emp where EMPNO = #{EMPNO}
+    </select>
+<!--保存用户-->
+    <insert id="saveEmpno" parameterType="com.neusoft.domain.Emp">
+        insert into emp values (#{EMPNO},#{ENAME},#{JOB},#{MGR},#{HIREDATE},
+        #{SAL},#{COMM},#{DEPTNO})
+    </insert>
+<!--    更新用户-->
+    <update id="updateEmpno" parameterType="com.neusoft.domain.Emp">
+        update emp set ENAME = #{ENAME},JOB = #{JOB},MGR = #{MGR},
+        HIREDATE =#{HIREDATE},SAL =#{SAL},COMM =#{COMM},DEPTNO =#{DEPTNO} where EMPNO = #{EMPNO}
+    </update>
+<!--    删除用户-->
+    <delete id="deleteEmpno" parameterType="INT">
+        delete from emp where EMPNO = #{EMPNO}
+    </delete>
+<!--    根据姓名进行模糊查询-->
+    <select id="findByName" parameterType="STRING" resultType="com.neusoft.domain.Emp">
+        select * from emp where ENAME like #{ENAME}
+    </select>
+
+<!--    查询总记录数-->
+    <select id="totalCount" resultType="INT">
+        select count(*) from emp;
+    </select>
+</mapper>

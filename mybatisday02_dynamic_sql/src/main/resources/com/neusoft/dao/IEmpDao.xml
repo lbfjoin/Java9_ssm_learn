@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.dao.IEmpDao">
+    <resultMap id="empMap" type="com.neusoft.domain.Emp">
+        <id property="emp_no" column="EMPNO"></id>
+        <result property="e_name" column="ENAME"></result>
+        <result property="e_job" column="JOB"></result>
+        <result property="mgr" column="MGR"></result>
+        <result property="hirdate" column="HIREDATE"></result>
+        <result property="sal" column="SAL"></result>
+        <result property="comm" column="COMM"></result>
+        <result property="dept_no" column="DEPTNO"></result>
+
+    </resultMap>
+    <sql id="defaultEmp">
+            select * from emp
+        </sql>
+    <select id="findByCondition" parameterType="emp" resultMap="empMap">
+        <include refid="defaultEmp"></include>
+        <where>
+            <if test="emp_no != null">
+                and EMPNO = #{emp_no}
+            </if>
+            <if test="e_name != null">
+                and ename = #{e_name}
+            </if>
+
+            <if test="e_job != null">
+                and JOB =#{e_job}
+            </if>
+            <if test="mgr != null">
+                and MGR = #{mgr}
+            </if>
+            <if test="hirdate != null">
+                and HIREDATE = #{hirdate}
+            </if>
+
+            <if test="sal != null">
+                and SAL =#{sal}
+            </if>
+
+            <if test="comm != null">
+                and COMM = #{comm}
+            </if>
+
+            <if test="dept_no != null">
+                and DEPTNO = #{dept_no}
+            </if>
+
+        </where>
+
+    </select>
+
+    <select id="findEmpByQueryVo" parameterType="queryVo" resultMap="empMap">
+        <include refid="defaultEmp"></include>
+         <where>
+             and ENAME like #{emp.e_name}
+         </where>
+    </select>
+
+    <select id="findEmpByEmpnos" parameterType="queryVo" resultMap="empMap">
+        <include refid="defaultEmp"></include>
+        <where>
+            <if test="empnos != null and empnos.size() > 0">
+                <foreach collection="empnos" open="and EMPNO in (" close=")" item="uempnos" separator=",">
+                    #{uempnos}
+                </foreach>
+            </if>
+        </where>
+    </select>
+</mapper>
+

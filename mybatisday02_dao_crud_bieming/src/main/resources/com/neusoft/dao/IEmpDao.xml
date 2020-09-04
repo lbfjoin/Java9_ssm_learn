@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.dao.IEmpDao">
+    <resultMap id="empMap" type="com.neusoft.domain.Emp">
+    <id property="emp_no" column="EMPNO"></id>
+
+        <result property="e_name" column="ENAME"></result>
+        <result property="e_job" column="JOB"></result>
+        <result property="mgr" column="MGR"></result>
+        <result property="hirdate" column="HIREDATE"></result>
+        <result property="sal" column="SAL"></result>
+        <result property="comm" column="COMM"></result>
+        <result property="dept_no" column="DEPTNO"></result>
+
+    </resultMap>
+
+    <select id="findAll" resultMap="empMap">
+        select * from emp
+    </select>
+
+    <select id="findByEmp" parameterType="INT" resultMap="empMap">
+        select * from emp where EMPNO = #{empno}
+    </select>
+
+    <insert id="saveEmp" parameterType="emp">
+        insert into emp values(#{emp_no},#{e_name}, #{e_job}, #{mgr}
+        ,#{hirdate},#{sal},#{comm},#{dept_no})
+    </insert>
+
+    <update id="updateEmp" parameterType="emp" >
+        update emp set ENAME=#{e_name}, JOB=#{e_job}, MGR=#{mgr}
+        ,HIREDATE = #{hirdate},SAL =#{sal},COMM=#{comm},DEPTNO=#{dept_no} where EMPNO =#{emp_no}
+    </update>
+
+    <select id="findByName" parameterType="STRING" resultMap="empMap" >
+        select * from emp where ENAME like #{ename}
+    </select>
+
+    <select id="findTotal" resultType="INT">
+        select count(*) from emp;
+    </select>
+
+
+
+</mapper>

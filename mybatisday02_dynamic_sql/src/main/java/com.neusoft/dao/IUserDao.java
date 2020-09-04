@@ -1,7 +1,8 @@
 package com.neusoft.dao;
 
+import com.neusoft.domain.QueryVo;
 import com.neusoft.domain.User;
-import org.apache.ibatis.annotations.Select;
+
 
 import java.util.List;
 
@@ -38,5 +39,15 @@ public interface IUserDao {
      * 查询总记录数
      */
     int findTotal();
+
+    //根据传参条件 进行查询 有可能是用户名，有可能是性别 啥都可能
+    List<User> findByConditon(User user);
+
+    //传入其他实体类对象类型
+     List<User> findUserByQueryVo(QueryVo vo);
+
+     //根据id集合进行用户查询
+    List<User>  findUserByIds(QueryVo vo);
+
 
 }

@@ -1,8 +1,8 @@
 package test;
 
 import com.neusoft.dao.IUserDao;
+import com.neusoft.domain.QueryVo;
 import com.neusoft.domain.User;
-import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -11,9 +11,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+
 import javax.jws.soap.SOAPBinding;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -23,7 +25,7 @@ import java.util.List;
  */
 public class MybatisTest1 {
     private  InputStream in;
-    private  SqlSession sqlSession;
+    private SqlSession sqlSession;
     private  IUserDao userDao;
     // 在测试方法之前执行
     @Before
@@ -64,25 +66,25 @@ public class MybatisTest1 {
     public void testSave(){
         //注意要提交事物
         User user = new User();
-        user.setUsername("兰陵王");
-        user.setBirthday(new Date());
-        user.setSex("男");
-        user.setAddress("王者峡谷野区");
+        user.setUserName("兰陵王");
+        user.setUserBirthday(new Date());
+        user.setUserSex("男");
+        user.setUserAddress("王者峡谷野区");
         System.out.println("保存之前" + user);
         int i = userDao.savaUser(user);
         System.out.println("影响的行数" + i);
         System.out.println("保存之后" +user);
-        System.out.println(user.getId());
+        System.out.println(user.getUserId());
     }
     @Test
     public void testUpdate(){
         //注意要提交事物
         User user = new User();
-        user.setId(64);
-        user.setUsername("李白");
-        user.setBirthday(new Date());
-        user.setSex("男");
-        user.setAddress("王者峡谷野区");
+        user.setUserId(63);
+        user.setUserName("李白");
+        user.setUserBirthday(new Date());
+        user.setUserSex("男");
+        user.setUserAddress("王者峡谷野区");
         System.out.println("更新之前" + user);
         int i = userDao.updateUser(user);
         System.out.println("影响的行数" + i);
@@ -91,13 +93,15 @@ public class MybatisTest1 {
     @Test
     public void testDelete(){
 
-        int res = userDao.deleteUser(64);
+        int res = userDao.deleteUser(65);
         System.out.println("res:" + res);
 
     }
     @Test
     public void testLikeName(){
         List<User> users = userDao.findByName("%李%");
+//        List<User> users = userDao.findByName("李");
+
         for (User user:users){
             System.out.println(user);
         }
@@ -106,6 +110,42 @@ public class MybatisTest1 {
     public void testCount(){
         int total = userDao.findTotal();
         System.out.println(total);
+    }
+    @Test
+    public void testfindByConditon(){
+        User user = new User();
+//        user.setUserName("老李");
+        user.setUserSex("男");
+        List<User> users = userDao.findByConditon(user);
+        for (User u:users){
+            System.out.println(u);
+        }
+    }
+    @Test
+    public void testQueryVo(){
+        QueryVo queryVo = new QueryVo();
+        User user = new User();
+        user.setUserName("%李%");
+        queryVo.setUser(user);
+        List<User> users = userDao.findUserByQueryVo(queryVo);
+        for (User u : users){
+            System.out.println(u);
+        }
+    }
+    @Test
+    public void testFindIds(){
+        QueryVo queryVo = new QueryVo();
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(41);
+        list.add(42);
+        list.add(43);
+        queryVo.setIds(list);
+
+        //执行
+        List<User> users = userDao.findUserByIds(queryVo);
+        for (User user :users){
+            System.out.println(user);
+        }
     }
 
 }
