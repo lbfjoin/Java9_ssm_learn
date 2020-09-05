@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,23 +49,7 @@
       <recent name="C:\Users\lbf\Documents\GitHub\Java9_ssm_learn\mybatisday02_dao_crud_bieming\src\main\resources\com\neusoft\dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisTest2.testSaveEmp">
-    <configuration name="MybatisTest1.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatisday02_dao_crud_bieming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.MybatisTest1" />
-      <option name="METHOD_NAME" value="testSave" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MybatisTest3.testFindByDeptnos">
     <configuration name="MybatisTest2.testSaveEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisday02_dao_crud_bieming" />
       <extension name="coverage">
@@ -98,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisTest2.testfindByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisTest3.testFindByConditon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisday02_dao_crud_bieming" />
       <extension name="coverage">
         <pattern>
@@ -107,14 +91,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.MybatisTest2" />
-      <option name="METHOD_NAME" value="testfindByName" />
+      <option name="MAIN_CLASS_NAME" value="test.MybatisTest3" />
+      <option name="METHOD_NAME" value="testFindByConditon" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisTest2.testfindTotal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisTest3.testFindByDeptnos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisday02_dao_crud_bieming" />
       <extension name="coverage">
         <pattern>
@@ -123,8 +107,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.MybatisTest2" />
-      <option name="METHOD_NAME" value="testfindTotal" />
+      <option name="MAIN_CLASS_NAME" value="test.MybatisTest3" />
+      <option name="METHOD_NAME" value="testFindByDeptnos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest3.testFindDeptByQueryVo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisday02_dao_crud_bieming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MybatisTest3" />
+      <option name="METHOD_NAME" value="testFindDeptByQueryVo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MybatisTest3.testFindByDeptnos" />
+        <item itemvalue="JUnit.MybatisTest3.testFindDeptByQueryVo" />
+        <item itemvalue="JUnit.MybatisTest3.testFindByConditon" />
         <item itemvalue="JUnit.MybatisTest2.testSaveEmp" />
         <item itemvalue="JUnit.MybatisTest2.testUpdate" />
-        <item itemvalue="JUnit.MybatisTest1.testSave" />
-        <item itemvalue="JUnit.MybatisTest2.testfindByName" />
-        <item itemvalue="JUnit.MybatisTest2.testfindTotal" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599190110473</updated>
-      <workItem from="1599190114134" duration="12191000" />
+      <workItem from="1599190114134" duration="19889000" />
     </task>
     <servers />
   </component>
@@ -158,30 +158,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1599206799310">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1599230957431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599206799310" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599230957431" />
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599190333232">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599190333232" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1599206349269">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1599266848831">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599206349269" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1599206349268">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599266848831" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1599266848831">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599206349268" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1599206349268">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599266848831" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1599266848831">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599206349268" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1599206349268">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599266848831" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1599266848831">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599206349268" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599266848831" />
     <state x="178" y="120" key="new project wizard" timestamp="1599207376076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

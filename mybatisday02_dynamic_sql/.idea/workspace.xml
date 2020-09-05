@@ -42,7 +42,7 @@
       <recent name="C:\Users\lbf\Documents\GitHub\Java9_ssm_learn\mybatisday02_dynamic_sql\src\main\resources\com\neusoft\dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisTest2.testFindByCondition">
+  <component name="RunManager" selected="JUnit.MybatisTest2.testFindEmpByQueryVo">
     <configuration name="MybatisTest1.testFindIds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisday02_dynamic_sql" />
       <extension name="coverage">
@@ -125,9 +125,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MybatisTest2.testFindByCondition" />
-        <item itemvalue="JUnit.MybatisTest2.testfindEmpByEmpnos" />
         <item itemvalue="JUnit.MybatisTest2.testFindEmpByQueryVo" />
+        <item itemvalue="JUnit.MybatisTest2.testfindEmpByEmpnos" />
+        <item itemvalue="JUnit.MybatisTest2.testFindByCondition" />
         <item itemvalue="JUnit.MybatisTest1.testfindByConditon" />
         <item itemvalue="JUnit.MybatisTest1.testFindIds" />
       </list>
@@ -143,7 +143,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599207376265</updated>
-      <workItem from="1599207379286" duration="11179000" />
+      <workItem from="1599207379286" duration="16655000" />
     </task>
     <servers />
   </component>
@@ -159,26 +159,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599208007742" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1599222352377">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1599264309214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599222352377" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1599222352376">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599264309214" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1599264309214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599222352376" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1599222352376">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599264309214" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1599264309214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599222352376" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1599222352376">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599264309214" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1599264309214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599222352376" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599264309214" />
     <state x="299" y="70" key="Maven.ArtifactSearchDialog" timestamp="1599218611720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1599218611720" />
+    <state x="178" y="116" key="new project wizard" timestamp="1599266682965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="116" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599266682965" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599218187201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

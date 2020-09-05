@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.neusoft.dao.IEmpDao">
-    <resultMap id="empMap" type="com.neusoft.domain.Emp">
+    <resultMap id="empMap" type="Emp">
         <id property="emp_no" column="EMPNO"></id>
         <result property="e_name" column="ENAME"></result>
         <result property="e_job" column="JOB"></result>

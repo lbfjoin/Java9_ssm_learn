@@ -34,6 +34,5 @@
         <package name="com.neusoft.dao"/>
 <!--        <mapper resource="com/neusoft/dao/IUserDao.xml"/>-->
 <!--        <mapper class="com.neusoft.dao.IUserDao"/>-->
-
     </mappers>
 </configuration>
