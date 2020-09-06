@@ -1,12 +1,14 @@
-package com.neusoft.service;
+package com.neusoft.dao;
 
 import com.neusoft.domain.Account;
 
 import java.util.List;
 
-public interface IAccountService {
-
-    //查询所有
+/**
+ * @author lbf
+ * @date 2020/9/5 11:05
+ */
+public interface IAccountDao {
     List<Account> findAllAccount();
 
     Account findAccountById(Integer accountId);

@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springday01_01_ioc_demo" />
+        <module name="springday01_02_account_demo_annoc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
