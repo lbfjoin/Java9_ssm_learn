@@ -38,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mybatisday01_03_dao_crud/src/main/resources/com/neusoft/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -169,6 +169,7 @@
       <workItem from="1599137042921" duration="2811000" />
       <workItem from="1599142141110" duration="881000" />
       <workItem from="1599187331063" duration="5875000" />
+      <workItem from="1599457813882" duration="11000" />
     </task>
     <servers />
   </component>
