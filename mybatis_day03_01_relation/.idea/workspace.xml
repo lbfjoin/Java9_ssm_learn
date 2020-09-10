@@ -29,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springday01_01_ioc_demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -113,6 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599266683152</updated>
       <workItem from="1599266686536" duration="9180000" />
+      <workItem from="1599554423107" duration="46000" />
     </task>
     <servers />
   </component>

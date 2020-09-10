@@ -29,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mybatisday02_dao_crud_bieming" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -145,6 +145,8 @@
       <updated>1599207376265</updated>
       <workItem from="1599207379286" duration="17744000" />
       <workItem from="1599457965410" duration="624000" />
+      <workItem from="1599553656002" duration="1434000" />
+      <workItem from="1599555267765" duration="28000" />
     </task>
     <servers />
   </component>
@@ -160,6 +162,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599208007742" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1599555289742">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599555289742" />
     <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1599273730796">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
